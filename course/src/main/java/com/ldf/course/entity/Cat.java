@@ -6,7 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 
 @Entity
-@Table(name = "cats")
+@Table(name = "`cats`")
 @Data
 @Builder // для подключения паттерна билдер
 @AllArgsConstructor
