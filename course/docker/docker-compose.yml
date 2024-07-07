@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   app:
-    image: 'b9aafe6a048f'
+    image: myapp:latest
     container_name: app
     expose:
       - '8080'
@@ -20,5 +20,6 @@ services:
     expose:
       - '5432'
     environment:
+      - POSTGRES_DB=YTSpringCourse
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=aks
