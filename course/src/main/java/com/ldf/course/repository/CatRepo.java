@@ -5,5 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CatRepo extends JpaRepository<Cat, Integer> {
-
+    Cat findByName(String name);
 }
